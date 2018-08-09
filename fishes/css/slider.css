@@ -1,0 +1,117 @@
+.hidden {
+  display: none;
+}
+
+.catch {
+  display: block;
+  height: 0;
+  overflow: hidden
+}
+
+#slider {
+  margin: 0 auto
+}
+
+#slide1:checked ~ #slides .inner {
+  margin-left: 0
+}
+
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%
+}
+
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%
+}
+
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%
+}
+
+#slide5:checked ~ #slides .inner {
+  margin-left: -400%
+}
+
+#container {
+  width: 100%;
+  overflow: hidden
+}
+
+article img {
+  width: 100%;
+}
+
+#slides .inner {
+  width: 500%;
+  line-height: 0
+}
+
+#slides article {
+  width: 20%;
+  float: left
+}
+
+#commands {
+}
+
+#commands label {
+  width: 50px;
+  height: 50px;
+  margin: -35% -10% 0 -10%;
+}
+
+#slide1:checked ~ #commands label:nth-child(2),
+#slide2:checked ~ #commands label:nth-child(3),
+#slide3:checked ~ #commands label:nth-child(4),
+#slide4:checked ~ #commands label:nth-child(5),
+#slide5:checked ~ #commands label:nth-child(1) {
+  background: url(../images/right-arrow2.svg) no-repeat;
+  float: right;
+  display: block
+}
+
+#slide1:checked ~ #commands label:nth-child(5),
+#slide2:checked ~ #commands label:nth-child(1),
+#slide3:checked ~ #commands label:nth-child(2),
+#slide4:checked ~ #commands label:nth-child(3),
+#slide5:checked ~ #commands label:nth-child(4) {
+  background: url(../images/left-arrow2.svg) no-repeat;
+  float: left;
+  display: block
+}
+
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3),
+#slide4:checked ~ #active label:nth-child(4),
+#slide5:checked ~ #active label:nth-child(5) {
+  background: #000;
+  opacity: 0.6;
+  border-color: #fff !important;
+  border: 2px solid #fff
+}
+
+
+#slides {
+  position: relative;
+  padding: 2px;
+  border: 1px solid #ddd;
+  margin: 45px 0 0;
+  background: #FFF;
+  background: -webkit-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+  background: -moz-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+  background: -ms-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+  background: -o-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+  background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)
+}
+
+
+#slider {
+  max-width: 960px
+}
